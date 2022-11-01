@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top right, rgb(26, 24, 22) , rgb(11, 32, 21));
+}
+
+.container-input{
+    max-width: 480px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1{
+    font-size: 3.4vh;
+    position: relative;
+    top: -50px;
+    color: rgb(14, 187, 52);
+    font-weight: 800;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.container-input .span-main{
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vh;
+
+}
+
+.slider{
+    width: 100%;
+    border-radius: 5px;
+    height: 18px;
+    outline: none;
+    position: relative;
+    top: 15px;
+    margin: auto;
+}
+
+.button-cta{
+    font-size: 2vh;
+    position: relative;
+    top: 45px;
+    width: 100%;
+    height: 4vh;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    margin: auto;
+    background: rgb(64, 180, 41);
+    transition: 0.3s all;
+    color: #fff;
+}
+.button-cta:hover{
+    transform: scale(1.05);
+}
+.container-password{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 80px;
+    font-size: 2vh;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.password{
+    width: 100%;
+    position: relative;
+    top: 110px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid rgba(14, 187, 51, 0.37);
+    transition: 0.5s all;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 20px;
+    margin: auto;
+
+}
+
+.password:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+
+.tooltip{
+    width: 100%;
+    color: #fff;
+    position: relative;
+    top: 150px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    padding: 6px 8px;
+    font-size: 2vh;
+    border-radius: 4px;
+    transition: 0.4s all;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    margin: auto;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    transition: 0.3s all;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 715px) {
+    h1{
+        font-size: 3vh;
+    }
+    .container-input .span-main{
+        font-size: 1.8vh;
+    }
+    .button-cta{
+        font-size: 1.8vh;
+    }
+    .title{
+        font-size: 1.8vh; 
+    }
+    h1, .container-input .span-main, .button-cta, .title, .tooltip{
+        transition: 0.3s all;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    h1{
+        font-size: 2.5vh;
+    }
+    .container-input .span-main{
+        font-size: 1.5vh;
+    }
+    .button-cta{
+        font-size: 1.5vh;
+    }
+    .title{
+        font-size: 1.5vh; 
+    }
+    .tooltip{
+        font-size: 1.5vh;
+    }
+    .password{
+        font-size: 1.7vh;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    h1{
+        font-size: 2vh;
+    }
+    .container-input .span-main{
+        font-size: 1.2vh;
+    }
+    .button-cta{
+        font-size: 1.2vh;
+    }
+    .title{
+        font-size: 1.2vh; 
+    }
+
+}
+
+
+@media only screen and (max-width: 420px) {
+    h1{
+        font-size: 2.5vh;
+    }
+    .container-input .span-main{
+        font-size: 1.5vh;
+    }
+    .button-cta{
+        font-size: 1.5vh;
+    }
+    .title{
+        font-size: 1.5vh; 
+    }
+
+
+}
